@@ -32,9 +32,13 @@ li {
   width: 70px;
   height: 25px;
 }
+#bg{
+  background-image: url(./assets/images/backgroundimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .wrapper {
   height: 100vh;
-  background-color: rgb(0, 126, 243);
   display: flex;
   justify-content:space-between ;
   flex-wrap:wrap;
@@ -47,13 +51,16 @@ li {
   border: 2px solid rgb(0, 140, 255);
   border-radius: 15px;
   text-align: center;
-  transition: background-color 5s, color 5s, box-shadow 5s, background-image; 
+  transition: all 5s ease-in-out; 
+  transition: all 3s ease-in-out;
+  transform: translate(0), scale(0), rotate(0 deg);
 }
 .card:hover{
 background-color: rgb(46, 206, 206);
 color: rgb(0, 29, 190);
 box-shadow: -3px -3px 3px 3px, 3px 3px 3px 3px;
 background-image:url(./assets/images/backgroundimage.jpg) ;
+transform: translate(200px, 200px) scale(1.2) rotate(7200deg);
 }
 .image {
   width: 100%;
